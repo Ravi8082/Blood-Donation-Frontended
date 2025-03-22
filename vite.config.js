@@ -4,8 +4,17 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true,  // Allows external access
+    host: '0.0.0.0',  // Allow connections from any IP
+    port: 4173,       // Ensure it's using the right port
     strictPort: true,
-    allowedHosts: "blood-donation-frontended-7.onrender.com"
+    cors: true,
+    allowedHosts: ["blood-donation-frontended-7.onrender.com"], // Allow your Render domain
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173,
+    strictPort: true,
+    cors: true,
+    allowedHosts: ["blood-donation-frontended-7.onrender.com"], // Ensure allowed in preview mode
   }
-})
+});
