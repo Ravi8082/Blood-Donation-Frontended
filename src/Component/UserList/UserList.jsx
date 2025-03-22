@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaUser, FaTint, FaPhone, FaEnvelope, FaBirthdayCake, FaSearch } from 'react-icons/fa';
-import './Userlist.css';
+import './UserList.css';  // ✅ Correct
+
 
 const UserList = () => {
     const [users, setUsers] = useState([]);
