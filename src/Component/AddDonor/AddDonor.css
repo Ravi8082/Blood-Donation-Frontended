@@ -1,0 +1,251 @@
+.add-donor-container6 {
+    padding: 90px 20px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+  }
+  
+  .form-header6 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .blood-drop6 {
+    font-size: 3.5rem;
+    color: #dc2626;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+    filter: drop-shadow(0 2px 4px rgba(220, 38, 38, 0.2));
+  }
+  
+  .form-header6 h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #dc2626;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .form-header6 p {
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+  
+  .add-donor-form6 {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.1);
+  }
+  
+  .form-section6 {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff5f5;
+    border-radius: 12px;
+    border: 1px solid #fecaca;
+  }
+  
+  .form-section6 h3 {
+    color: #dc2626;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #dc2626;
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+  
+  .form-field6 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group6 {
+    position: relative;
+  }
+  
+  .field-icon6 {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #dc2626;
+    font-size: 1.2rem;
+  }
+  
+  .input-group6 input,
+  .input-group6 select,
+  .input-group6 textarea {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 2px solid #fecaca;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+  }
+  
+  .input-group6 textarea {
+    min-height: 100px;
+    padding-top: 40px;
+  }
+  
+  .input-group6 input:focus,
+  .input-group6 select:focus,
+  .input-group6 textarea:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+    outline: none;
+  }
+  
+  .input-group6 input.error,
+  .input-group6 select.error {
+    border-color: #ef4444;
+    background: #fef2f2;
+  }
+  
+  .error-text6 {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .gender-group6 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    border: 2px solid #fecaca;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .gender-options6 {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .gender-option6 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  .gender-option6 input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #dc2626;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.2);
+  }
+  
+  .button-icon6 {
+    font-size: 1.2rem;
+  }
+  
+  .error-banner6,
+  .success-banner6 {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .error-banner6 {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+  }
+  
+  .success-banner6 {
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @media (max-width: 1024px) {
+    .add-donor-form6 {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .add-donor-container6 {
+      padding: 80px 15px 15px;
+    }
+  
+    .form-header6 h2 {
+      font-size: 1.8rem;
+    }
+  
+    .form-section6 {
+      padding: 15px;
+    }
+  
+    .gender-options6 {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .add-donor-container6 {
+      padding: 70px 10px 10px;
+    }
+  
+    .form-header6 h2 {
+      font-size: 1.5rem;
+    }
+  
+    .blood-drop6 {
+      font-size: 3rem;
+    }
+  
+    .form-section6 h3 {
+      font-size: 1.2rem;
+    }
+  
+    .input-group6 input,
+    .input-group6 select,
+    .input-group6 textarea {
+      font-size: 0.95rem;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }

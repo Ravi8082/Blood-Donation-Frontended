@@ -1,0 +1,358 @@
+.profile-container55 {
+    min-height: calc(100vh - 60px);
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffebeb 0%, #ffe5e5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.profile-card55 {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.15);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.profile-header55 {
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-avatar55 {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-avatar55:hover {
+    transform: scale(1.05);
+}
+
+.profile-avatar55 svg {
+    width: 50px;
+    height: 50px;
+    color: #dc2626;
+}
+
+.blood-group55 {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+}
+
+.profile-content55 {
+    padding: 30px;
+}
+
+.profile-fields55 {
+    display: grid;
+    gap: 25px;
+}
+
+.field-group55 {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid #fecaca;
+}
+
+.field-group55:hover {
+    background: #fff5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.1);
+}
+
+.field-icon55 {
+    width: 24px;
+    height: 24px;
+    color: #dc2626;
+    margin-top: 24px;
+}
+
+.field-content55 {
+    flex: 1;
+}
+
+.field-content55 label {
+    display: block;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.field-content55 p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1f2937;
+    padding: 8px 0;
+}
+
+.field-content55 input,
+.field-content55 textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #fecaca;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.field-content55 textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.field-content55 input:focus,
+.field-content55 textarea:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1);
+    outline: none;
+}
+
+.profile-actions55 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.edit-btn55,
+.save-btn55,
+.cancel-btn55 {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.edit-btn55 {
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+    color: white;
+}
+
+.save-btn55 {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    color: white;
+}
+
+.cancel-btn55 {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.edit-btn55:hover,
+.save-btn55:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.loading-container55 {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffebeb 0%, #ffe5e5 100%);
+    margin-top: 60px;
+}
+
+.loader55 {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #fecaca;
+    border-top: 4px solid #dc2626;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.result-container55 {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffebeb 0%, #ffe5e5 100%);
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.result-message {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.15);
+    animation: scaleIn 0.5s ease-out;
+}
+
+.success55 h2 {
+    color: #16a34a;
+}
+
+.error55 h2 {
+    color: #dc2626;
+}
+
+.result-icon55 {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+    .profile-container55 {
+        padding: 20px 15px;
+    }
+
+    .profile-card55 {
+        margin: 0 10px;
+    }
+
+    .profile-header55 {
+        padding: 30px 15px;
+    }
+
+    .profile-avatar55 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .field-group55 {
+        padding: 12px;
+    }
+
+    .profile-content55 {
+        padding: 20px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .profile-container55 {
+        padding: 15px 10px;
+    }
+
+    .profile-avatar55 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-avatar55 svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .field-content55 p {
+        font-size: 1rem;
+    }
+
+    .field-group55 {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .field-icon55 {
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+    }
+
+    .profile-actions55 {
+        flex-direction: column;
+    }
+
+    .edit-actions55 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .edit-btn55,
+    .save-btn55,
+    .cancel-btn55 {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .result-icon55 {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Small Mobile Responsive */
+@media (max-width: 360px) {
+    .profile-content55 {
+        padding: 15px;
+    }
+
+    .field-content55 label {
+        font-size: 0.85rem;
+    }
+
+    .field-content55 p {
+        font-size: 0.95rem;
+    }
+}

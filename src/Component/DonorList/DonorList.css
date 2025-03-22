@@ -1,0 +1,214 @@
+.donor-list-container1 {
+    padding: 90px 20px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+  }
+  
+  .donor-list-header1 {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.1);
+  }
+  
+  .donor-list-header1 h1 {
+    font-size: 2.2rem;
+    color: #dc2626;
+    margin: 0 0 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .search-box1 {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .search-icon1 {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #dc2626;
+    font-size: 1.2rem;
+  }
+  
+  .search-box1 input {
+    width: 75%;
+    padding: 15px 15px 15px 45px;
+    border: 2px solid #fecaca;
+    border-radius: 50px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+  }
+  
+  .search-box1 input:focus {
+    border-color: #dc2626;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+  }
+  
+  .donors-grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 10px;
+  }
+  
+  .donor-card1 {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(220, 38, 38, 0.1);
+  }
+  
+  .donor-card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.15);
+  }
+  
+  .blood-group-badge1 {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.2);
+  }
+  
+  .donor-info1 {
+    padding-top: 15px;
+  }
+  
+  .donor-info1 h3 {
+    color: #1e293b;
+    font-size: 1.3rem;
+    margin: 0 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .donor-info1 p {
+    color: #64748b;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  
+  .info-icon1 {
+    color: #dc2626;
+    font-size: 1.1rem;
+  }
+  
+  .age {
+    background: #f8fafc;
+    padding: 8px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .donation-date1 {
+    color: #dc2626 !important;
+    font-weight: 500;
+    border-top: 1px solid #fecaca;
+    padding-top: 10px;
+    margin-top: 15px !important;
+  }
+  
+  .loading-spinner1 {
+    text-align: center;
+    padding: 40px;
+    grid-column: 1 / -1;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #fecaca;
+    border-top: 3px solid #dc2626;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .no-donors1 {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.1);
+    grid-column: 1 / -1;
+  }
+  
+  .no-donors1 p {
+    color: #1e293b;
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+  }
+  
+  .no-donors1 small {
+    color: #64748b;
+  }
+  
+  @keyframes spin {
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .donors-grid1 {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .donor-list-container1 {
+      padding: 80px 15px 15px;
+    }
+  
+    .donor-list-header1 {
+      padding: 20px;
+    }
+  
+    .donor-list-header1 h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .donor-list-container1 {
+      padding: 70px 10px 10px;
+    }
+  
+    .donor-list-header1 h1 {
+      font-size: 1.5rem;
+    }
+  
+    .blood-group-badge1 {
+      font-size: 1rem;
+      padding: 6px 15px;
+    }
+  
+    .donor-info1 h3 {
+      font-size: 1.2rem;
+    }
+  
+    .donor-info1 p {
+      font-size: 0.95rem;
+    }
+  }

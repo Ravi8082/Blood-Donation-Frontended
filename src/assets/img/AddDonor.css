@@ -1,0 +1,232 @@
+.add-donor-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(145deg, #ffffff, #f5f5f5);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #dc2626;
+  }
+  
+  .blood-drop {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: pulse 2s infinite;
+  }
+  
+  .form-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+  }
+  
+  .form-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+  
+  .add-donor-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .form-section h3 {
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #dc2626;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .form-field {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .field-icon {
+    position: absolute;
+    left: 12px;
+    color: #64748b;
+    font-size: 1.2rem;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+    outline: none;
+  }
+  
+  input.error, select.error {
+    border-color: #ef4444;
+    background: #fef2f2;
+  }
+  
+  .error-text {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: block;
+  }
+  
+  .gender-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .gender-options {
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .gender-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .gender-option input[type="radio"] {
+    width: auto;
+    margin: 0;
+  }
+  
+  .gender-option span {
+    color: #1e293b;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 1rem;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .submit-button:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+  }
+  
+  .button-icon {
+    font-size: 1.2rem;
+  }
+  
+  .error-banner, .success-banner {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .error-banner {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+  }
+  
+  .success-banner {
+    background: #f0fdf4;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
+  }
+  
+  .banner-icon {
+    font-size: 1.2rem;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @media (max-width: 768px) {
+    .add-donor-container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    .form-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    .add-donor-form {
+      padding: 1rem;
+    }
+  
+    .form-section {
+      padding: 1rem;
+    }
+  
+    .gender-options {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+  }

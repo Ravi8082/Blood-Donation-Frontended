@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #dc2626;
+  --secondary-color: #991b1b;
+  --background-color: #f8f9fa;
+  --text-color: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  position: fixed;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content-wrapper {
+  padding-bottom: 500px;
+}
+
+a, button, input, select, textarea, [role="button"] {
+  touch-action: manipulation;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+      padding-bottom: 700px;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  #root {
+      -webkit-overflow-scrolling: touch;
+  }
+}

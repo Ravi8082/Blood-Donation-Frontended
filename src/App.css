@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  -ms-touch-action: none;
+  -ms-user-select: none;
+}
+
+html, body {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  max-width: 100%;
+  max-height: 100%;
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overscroll-behavior: none;
+  -ms-touch-action: none;
+  user-select: none;
+}
+
+#root {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  touch-action: none;
+}
+
+.app-container {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  pointer-events: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+.page-content {
+  position: relative;
+  width: 100%;
+  pointer-events: auto;
+  touch-action: pan-y;
+}
+
+/* Enable interactions for clickable elements */
+a, button, input, select, textarea, [role="button"], [tabindex="0"] {
+  pointer-events: auto !important;
+  touch-action: manipulation;
+}
+
+/* Mobile specific fixes */
+@media (hover: none) and (pointer: coarse) {
+  html, body, #root, .app-container {
+      position: fixed !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
+      overscroll-behavior: none;
+      touch-action: none;
+      user-select: none;
+  }
+}
