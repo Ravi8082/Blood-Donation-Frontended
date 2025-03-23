@@ -105,7 +105,7 @@ const UserProfile = () => {
             
             // Use the correct endpoint that matches your backend controller
             const response = await axios.put(
-                `http://localhost:8082/updateuser/${userProfile.id}`,
+                `http://localhost:8082/updateuser/${id}`,
                 dataToSend
             );
             
