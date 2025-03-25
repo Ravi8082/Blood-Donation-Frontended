@@ -13,7 +13,7 @@ const Bloodstock = () => {
 
   const fetchBloodDetails = async () => {
     try {
-      const response = await fetch("http://localhost:8082/bloodDetails");
+      const response = await fetch("https://blood-donation-backend-19.onrender.com/bloodDetails");
       if (!response.ok) throw new Error("Failed to fetch blood stock data");
       const data = await response.json();
       setBloodDetails(data);
