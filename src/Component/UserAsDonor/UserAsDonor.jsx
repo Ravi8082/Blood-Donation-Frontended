@@ -97,7 +97,7 @@ const UserAsDonor = () => {
     }
 
     try {
-      await axios.post("http://localhost:8082/addAsDonor", donor);
+      await axios.post("https://blood-donation-backend-19.onrender.com/addAsDonor", donor);
       setSuccess(true);
       setFailed(false);
       setMsg("Thank you for volunteering as a donor!");
