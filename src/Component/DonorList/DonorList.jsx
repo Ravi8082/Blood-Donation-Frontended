@@ -16,7 +16,7 @@ const DonorList = () => {
   const fetchDonors = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:8082/donorlist");
+      const response = await axios.get("https://blood-donation-backend-19.onrender.com/donorlist");
       if (Array.isArray(response.data)) {
         setDonors(response.data);
         setFilteredDonors(response.data);
