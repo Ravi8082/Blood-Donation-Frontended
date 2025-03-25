@@ -17,7 +17,7 @@ const RequestHistoryUser = () => {
     try {
       setLoading(true);
       const userEmail = "palravi1093@gmail.com";
-      const response = await axios.get(`http://localhost:8082/requestHistory?email=${userEmail}`);
+      const response = await axios.get(`https://blood-donation-backend-19.onrender.com/requestHistory?email=${userEmail}`);
       // If status is empty/null, default to "Pending"
       const updatedRequests = response.data.map((request) => ({
         ...request,
