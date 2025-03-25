@@ -104,7 +104,7 @@ const RequestBlood = () => {
         if (!validateForm()) return;
 
         try {
-            await axios.post('http://localhost:8082/requestblood', request);
+            await axios.post('https://blood-donation-backend-19.onrender.com/requestblood', request);
             setSuccess(true);
             setFailed(false);
             setMsg('Blood Request Sent Successfully!');
