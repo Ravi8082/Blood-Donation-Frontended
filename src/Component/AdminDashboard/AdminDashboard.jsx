@@ -46,10 +46,10 @@ const AdminDashboard = () => {
 
       // Fetch all required data
       const [donorRes, requestRes, userRes, bloodRes] = await Promise.all([
-        axios.get("http://localhost:8082"/donorlist"),
-        axios.get("http://localhost:8082"/requestHistory"),
-        axios.get("http://localhost:8082"/userlist"),
-        axios.get("http://localhost:8082"/bloodDetails"),
+        axios.get("http://localhost:8082/donorlist"),
+        axios.get("http://localhost:8082/requestHistory"),
+        axios.get("http://localhost:8082/userlist"),
+        axios.get("http://localhost:8082/bloodDetails"),
       ]);
 
       // Set state for lists
