@@ -18,7 +18,7 @@ const UserList = () => {
         try {
             setLoading(true);
             setError(null);
-            const response = await axios.get('http://localhost:8082"/userlist');
+            const response = await axios.get('http://localhost:8082/userlist');
             if (response.data) {
                 setUsers(response.data);
             }
