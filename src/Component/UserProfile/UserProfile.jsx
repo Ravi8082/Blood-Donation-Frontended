@@ -28,7 +28,7 @@ const UserProfile = () => {
                 throw new Error('User email not found in session storage');
             }
 
-            const response = await axios.get(`http://localhost:8082"/getUserProfile/${userEmail}`);
+            const response = await axios.get(`http://localhost:8082/getUserProfile/${userEmail}`);
             setUserProfile(response.data);
             setUpdatedProfile(response.data);
         } catch (error) {
