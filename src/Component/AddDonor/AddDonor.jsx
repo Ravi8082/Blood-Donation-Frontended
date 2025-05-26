@@ -100,7 +100,7 @@ const AddDonor = () => {
     try {
       const formattedDate = new Date(donor.date).toISOString().split("T")[0];
       const response = await axios.post(
-        "https://blood-donation-backend-19.onrender.com/addDonor",
+        "http://localhost:8082"/addDonor",
         {
           ...donor,
           age: parseInt(donor.age),
