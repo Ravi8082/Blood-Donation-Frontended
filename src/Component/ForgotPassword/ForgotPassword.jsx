@@ -145,7 +145,7 @@ const ForgotPassword = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8082"/forgot-password", { email });
+      const response = await axios.post("http://localhost:8082/forgot-password", { email });
       setMessage(response.data);
       setStep(2);
       setCountdown(120); // Start 2-minute countdown
@@ -164,7 +164,7 @@ const ForgotPassword = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:8082"/resend-forgot-password", { email });
+      const response = await axios.post("http://localhost:8082/resend-forgot-password", { email });
       setMessage(response.data);
       
       const expiryTime = Date.now() + 120 * 1000; // 2 minutes
@@ -204,7 +204,7 @@ const ForgotPassword = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8082"/reset-password", {
+      const response = await axios.post("http://localhost:8082/reset-password", {
         email,
         otp: parseInt(otp),
         newPassword
