@@ -30,19 +30,19 @@ const UserDashboard = () => {
   const fetchDashboardData = async (user) => {
     try {
       setLoading(true);
-      const { data: donorsCount } = await axios.get("https://blood-donation-backend-19.onrender.com/getTotalDonors");
+      const { data: donorsCount } = await axios.get("http://localhost:8082"/getTotalDonors");
       setTotalDonors(donorsCount);
 
-      const { data: requestsCount } = await axios.get(`https://blood-donation-backend-19.onrender.com/requestHistory/${user}`);
+      const { data: requestsCount } = await axios.get(`http://localhost:8082"/requestHistory/${user}`);
       setTotalRequests(requestsCount.length);
 
-      const { data: donationsCount } = await axios.get(`https://blood-donation-backend-19.onrender.com/donationsCount/${user}`);
+      const { data: donationsCount } = await axios.get(`http://localhost:8082"/donationsCount/${user}`);
       setDonationCount(donationsCount);
 
-      const { data: usersCount } = await axios.get("https://blood-donation-backend-19.onrender.com/getTotalUsers");
+      const { data: usersCount } = await axios.get("http://localhost:8082"/getTotalUsers");
       setTotalUsers(usersCount);
 
-      const { data: bloodGroupsCount } = await axios.get("https://blood-donation-backend-19.onrender.com/bloodDetails");
+      const { data: bloodGroupsCount } = await axios.get("http://localhost:8082"/bloodDetails");
       setTotalBloodGroups(bloodGroupsCount.length);
 
       let totalBloodUnits = bloodGroupsCount.reduce((acc, group) => acc + group.units, 0);
