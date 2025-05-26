@@ -166,7 +166,7 @@ const Registration = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8082"/register", user);
+      const response = await axios.post("http://localhost:8082/register", user);
       if (response.data) {
         setOtpSent(true);
         setError("");
@@ -187,7 +187,7 @@ const Registration = () => {
 
     setResendLoading(true);
     try {
-        const response = await axios.post("http://localhost:8082"/resend-registration", {
+        const response = await axios.post("http://localhost:8082/resend-registration", {
             email: user.email,
         });
 
@@ -245,7 +245,7 @@ const Registration = () => {
 
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8082"/verify", {
+      const response = await axios.post("http://localhost:8082/verify", {
         email: user.email,
         emailOtp: user.emailOtp
       });
