@@ -19,7 +19,7 @@ const RequestHistory = () => {
     try {
       setLoading(true);
       setIsRefreshing(true);
-      const response = await axios.get("https://blood-donation-backend-19.onrender.com/requestHistory");
+      const response = await axios.get("http://localhost:8082"/requestHistory");
       setRequests(response.data);
     } catch (error) {
       console.error("Error fetching data", error);
@@ -32,7 +32,7 @@ const RequestHistory = () => {
   const updateRequestStatus = async (email, status) => {
     try {
       const endpoint = status === "approve" ? `/acceptstatus/${email}` : `/rejectstatus/${email}`;
-      await axios.get(`https://blood-donation-backend-19.onrender.com${endpoint}`);
+      await axios.get(`http://localhost:8082"${endpoint}`);
 
       setRequests(prevRequests =>
         prevRequests.map(request =>
